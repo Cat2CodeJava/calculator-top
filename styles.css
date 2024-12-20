@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button {
+    flex: 1;
+    margin: 1px;
+}
+
+#calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    border: 10px solid black;
+}
+
+#display {
+    background-color: grey;
+    flex: 1;
+    margin: 5px;
+}
+
+
+#firstRow {
+    display: flex;
+    flex: 1;
+}
+
+#secondRow {
+    display: flex;
+    flex: 1;
+}
+
+#thirdRow {
+    display: flex;
+    flex: 1;
+}
+
+#forthRow {
+    display: flex;
+    flex: 1;
+}
