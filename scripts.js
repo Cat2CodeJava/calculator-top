@@ -2,6 +2,20 @@
 let a = 1;
 let op = "+";
 let b = 2;
+let displayContainer = document.querySelector("#display");
+let calculatorContainer = document.querySelector("#calculatorContainer");
+
+calculatorContainer.addEventListener('click', (event) => {
+    let eventTriggered = event.target;
+
+    if (eventTriggered instanceof HTMLButtonElement) {
+        let content = eventTriggered.dataset.content;
+        content = +content;
+        if (!isNaN(content)) {
+            displayContainer.textContent += content;
+        }
+    }
+});
 
 
 function operate(a, b, op) {
